@@ -60,11 +60,11 @@ const Weather = () => {
         <div className={isDayTime(sun, night) ? 'weather-day' : 'weather-night'}>
             <div className="container w-50 h-50">
                 <div className='text-center py-1'>
-                    <h1 className='fs-1 text-danger'>Weather App</h1>
+                    <h1 className='fs-1 text-danger fw-bold'>Weather App</h1>
                 </div>
                 <div className={isDayTime(sun, night) ? 'day rounded-5' : 'night rounded-5'}>
                     <div className={isDayTime(sun, night) ? 'shadow d-flex align-items-center justify-content-center flex-column rounded-4' : 'shadow d-flex align-items-center justify-content-center nightimg text-light flex-column rounded-4'}>
-                        <div className='mt-5 w-100'>
+                        <div className='mt-2 w-100'>
                             <Search search={search} setSearch={setSearch} handleSearch={handleSearch} isDayTime={isDayTime} sun={sun} night={night} />
                         </div>
                         {loading ? (
