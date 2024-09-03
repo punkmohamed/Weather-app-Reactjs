@@ -1,0 +1,28 @@
+.weather-day {
+    background-image: url(../../assets/pexels-pixabay-314726.jpg);
+    background-size: cover;
+    height: 100vh;
+    transition: all 1s;
+   
+}
+.weather-night {
+    background-image: url(../../assets/Starry-Night-Clouds-Wallpaper-Mural.jpg);
+    background-size: cover;
+    height: 100vh;
+    transition: all 1s;
+   
+}
+.night {
+    background-image: url(../../assets/stars1.png);
+    background: linear-gradient(#01012e,#240019);
+    transition: all .5s;
+}
+.nightimg {
+     position: relative;
+    background-image: url(../../assets/stars1.png);
+    z-index: 100;
+}
+.day {
+    background: linear-gradient(to bottom,  #fdc352 0%,#e8ed92 100%);
+    transition: all .5s;
+}
