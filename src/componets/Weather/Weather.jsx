@@ -26,7 +26,7 @@ const Weather = () => {
     };
 
     useEffect(() => {
-        getWeather('London');
+        getWeather('Minya');
     }, []);
 
     const handleSearch = () => {
