@@ -1,6 +1,11 @@
 
 
 const Search = ({ search, setSearch, handleSearch, isDayTime, sun, night }) => {
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+    };
     return (
         <>
 
@@ -9,6 +14,7 @@ const Search = ({ search, setSearch, handleSearch, isDayTime, sun, night }) => {
                     <input type="text"
                         className="form-control w-50"
                         placeholder="Search Weather ..."
+                        onKeyPress={handleKeyPress}
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                     />
